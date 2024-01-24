@@ -69,11 +69,14 @@ section h1{font-size: 4.5em;}
 
 /* countdown styles */
 
-div#countdown{color: #353535;}
+div#countdown{
+	color: #353535;
+	display: flex;
+	justify-content: space-around;
+}
 
 div#countdown p{
 	width: 100%;
-	display: inline-block;
 	text-align: center;
 }
 
@@ -88,14 +91,16 @@ p.numbers{
 p.strings{
 	width: 100%;
 	height: auto;
-	padding: 30px 0;
 	background: #588666;
 	color: #FFFFFF;
+	font-size: 1.2em;
+	padding: 20px 0;
 }
 
+
 div.cd-box{
-	width: 210px;
-	height: 280px;
+	width: 200px;
+	height: 250px;
 	background: #FFFFFF;
 	float: left;
 	padding: 25px 0 0 0;
@@ -196,3 +201,27 @@ footer p{
 	text-align: center; 
 	margin-top: 50px;
 }
+  
+@media (max-width: 767px) {
+	div#countdown {
+	  flex-direction: row;
+	  align-items: center;
+	  flex-wrap: wrap;
+	}
+  
+	div.cd-box {
+	  width: 48%;
+	  height: 200px;
+	  margin: 10px 1%;
+	}
+  
+	p.numbers {
+	  font-size: 4em;
+	  height: 60%;
+	  padding-top: 15px;
+	}
+  
+	p.strings {
+	  font-size: 1.2em;
+	}
+  }
