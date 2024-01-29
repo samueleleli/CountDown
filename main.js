@@ -1,5 +1,3 @@
-
-
 function updateLabel(startDate){
     document.getElementById("date-from").innerHTML = "Since " + new Date(startDate).toLocaleDateString() + " " + new Date(startDate).toLocaleTimeString();
     document.getElementById("form").hidden = true
@@ -37,7 +35,7 @@ function progress(){
     document.getElementById("hours").innerText = ""+ hours;
     document.getElementById("minutes").innerText = "" + minutes;
     document.getElementById("seconds").innerText = "" + seconds;
-
+    
     if (done < 0.1) {
         percentStr = percentStr.slice(0, 9);
       } else {

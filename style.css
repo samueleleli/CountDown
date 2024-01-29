@@ -26,7 +26,7 @@ body{
 
 .title{
 	color: #FFFFFF;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	font-size: 4.5em;
 	font: normal 16px 'Roboto', sans-serif;
 }
@@ -63,7 +63,7 @@ section h1, section p.meta{
 
 section hgroup{margin-top: -360px;}
 
-p.numbers{font-size: 6em;}
+p.numbers{font-size: 4.5em;}
 p.meta,p.strings{font-size: 1.5em;}
 section h1{font-size: 4.5em;}
 
@@ -97,10 +97,9 @@ p.strings{
 	padding: 20px 0;
 }
 
-
 div.cd-box{
-	width: 200px;
-	height: 250px;
+	width: 220px;
+	height: 220px;
 	background: #FFFFFF;
 	float: left;
 	padding: 25px 0 0 0;
