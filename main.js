@@ -18,6 +18,15 @@ function progress(){
             debug: false,
             gravity: 800,
             zIndex: 99999,
+            count: party.variation.range(50,100),
+            shapes: ["square","circle","roundedRectangle"]
+        });
+        party.confetti(document.body,{
+            debug: false,
+            gravity: 800,
+            zIndex: 99999,
+            count: party.variation.range(50,100),
+            shapes: ["square","circle","roundedRectangle"]
         });
         cancelTimer()
         return 0
@@ -72,7 +81,17 @@ function startCountdown() {
                 debug: false,
                 gravity: 800,
                 zIndex: 99999,
-                });
+                count: party.variation.range(50,100),
+                shapes: ["square","circle","roundedRectangle"]
+            });
+
+            party.confetti(document.body,{
+                debug: false,
+                gravity: 800,
+                zIndex: 99999,
+                count: party.variation.range(50,100),
+                shapes: ["square","circle","roundedRectangle"]
+            });
             cancelTimer()
         }
         

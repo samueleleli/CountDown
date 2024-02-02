@@ -22,6 +22,7 @@ body{
 	position: absolute; 
 	height: 100%;
 	width: 100%;
+	margin:0;
 }
 
 .title{
@@ -133,7 +134,7 @@ footer p{
   }
 
   #container-percentage{
-	margin-top: 100px;
+	margin-top:100px;
 	width: 100%;
 	display: inline-block;
 	text-align: center;
@@ -194,7 +195,7 @@ footer p{
 	margin-bottom: 50px;
 }
 
-.top-buffer { margin-top:25px; }
+.top-buffer { margin-top:5px; }
 
 .cancel-div{
 	text-align: center; 
@@ -224,3 +225,4 @@ footer p{
 	  font-size: 1.2em;
 	}
   }
+

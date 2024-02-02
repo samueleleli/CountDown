@@ -9,40 +9,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <main role="main">
-
-      <div class="jumbotron" style="background: #215f7e; padding:15px">
+      <div class="jumbotron m-0" style="background: #215f7e; padding-bottom: 5px; padding-top: 5px;">
         <div class="container">
           <h1 class="display-3 title">Countdown</h1>
           <div style="margin-top: 10px;" id="form">
-            <form>
-              <div class="row">
-                <div class="col">
-                  <p class="label">Timer Name</p>
-                  <input type="text" class="form-control" id="motivo"></input>
-                </div>
-                <div class="col-9">
-                </div>
+
+            <div class="row top-buffer">
+              <div class="form-group col-md-4">
+                <label class="label">Countdown Title</label>
+                <input type="text" class="form-control" id="motivo"></input>
               </div>
-              <div class="row top-buffer">
-                <div class="col">
-                  <input type="datetime-local" class="form-control" id="end-date" /> 
-                </div>
+              <div class="col-md-8">
               </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="form-group col-md-4">
+                <label class="label">End Date</label>
+                <input type="datetime-local" class="form-control" id="end-date" /> 
+              </div>
+              <div class="col-md-8">
+              </div>
+            </div>  
+
               <div class="row top-buffer">
                 <div class="col">
                   <button class="btn btn-primary" id="start-button"> Start </button>
                 </div>
               </div>
-            </form>
           </div>
           <div style="margin-top: 10px;" id="timer-text" hidden>
           </div>
           
         </div>
-          
-          
-      </div> <!-- /container -->
+      </div>
 
     
     <div class="container">
@@ -83,17 +82,16 @@
       <div class="cancel-div">
         <button id="buton-cancel" class="btn btn-danger" hidden> Cancel timer</button>
       </div>
-      
+
       <footer>
-        <p>Developed by <a href="https://github.com/samueleleli" target="_blank">Samuele Leli</a></p>
+        <p>Developed by <a href="https://github.com/samueleleli" target="_blank">Samuele Leli</a></p> 
+        <p><a href="https://www.buymeacoffee.com/samueleleli" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 150px !important;" ></a></p>
         <br>
   
       </footer>
   
     </div>
-  </main>
-    <!-- end div.wrapper -->
-    
+
     <script src="progressbar.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script src="main.js"> </script>
