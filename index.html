@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown</title>
-    <link rel="icon" href="/icon/countdown.ico" type="image/x-icon"/>
+    <link rel="icon" href="/icon/countdown.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,11 +14,11 @@
         <div class="container">
           <h1 class="display-3 title">Countdown</h1>
           <div style="margin-top: 10px;" id="form">
-
+            <form>
             <div class="row top-buffer">
               <div class="form-group col-md-4">
                 <label class="label">Countdown Title</label>
-                <input type="text" class="form-control" id="motivo"></input>
+                <input type="text" class="form-control" id="motivo">
               </div>
               <div class="col-md-8">
               </div>
@@ -25,7 +26,7 @@
             <div class="row top-buffer">
               <div class="form-group col-md-4">
                 <label class="label">End Date</label>
-                <input type="datetime-local" class="form-control" id="end-date" /> 
+                <input type="datetime-local" class="form-control" id="end-date"> 
               </div>
               <div class="col-md-8">
               </div>
@@ -36,6 +37,7 @@
                   <button class="btn btn-primary" id="start-button"> Start </button>
                 </div>
               </div>
+            </form>
           </div>
           <div style="margin-top: 10px;" id="timer-text" hidden>
           </div>
@@ -101,4 +103,3 @@
   </body>
 
 </html>
-                 

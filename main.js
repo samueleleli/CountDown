@@ -1,3 +1,7 @@
+function isBlank(str) {
+    return (!str || /^\s*$/.test(str));
+}
+
 function updateLabel(startDate){
     document.getElementById("date-from").innerHTML = "Since " + new Date(startDate).toLocaleDateString() + " " + new Date(startDate).toLocaleTimeString();
     document.getElementById("form").hidden = true
@@ -60,16 +64,21 @@ function progress(){
 function startCountdown() {
     let now = new Date()
     let end_date = new Date(document.getElementById("end-date").value)
-    let motivo = document.getElementById('motivo').value
     
-    if(end_date >= now && motivo != ""){
+    if(end_date >= now){
         line = new ProgressBar.Line('#container-progress', {
             color: '#FCB03C'
         });
+        
         localStorage.setItem("CountDownDate",end_date)
         localStorage.setItem("StartDate",new Date())
-        localStorage.setItem("Subject",document.getElementById('motivo').value)
+        motivo = document.getElementById('motivo').value
+
+        if(isBlank(motivo)) localStorage.setItem("Subject","No Name :(")
+        else localStorage.setItem("Subject",motivo)
+    
         updateLabel(new Date())
+
         let value = progress()
         document.getElementById("buton-cancel").hidden = false;
         if (value < 1) {
@@ -158,4 +167,3 @@ if (localStorage.getItem("CountDownDate") !== null && localStorage.getItem("Star
         cancelTimer()
     }
 }
-
