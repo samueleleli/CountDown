@@ -80,7 +80,7 @@ function startCountdown() {
         updateLabel(new Date())
 
         let value = progress()
-        document.getElementById("buton-cancel").hidden = false;
+        document.getElementById("cancel-div").hidden = false;
         if (value < 1) {
             line.animate(progress());
             myReq = requestAnimationFrame(update);
@@ -108,7 +108,6 @@ function startCountdown() {
 }
 
 function cancelTimer(){
-    console.log("cancel")
     cancelAnimationFrame(myReq);
     localStorage.removeItem("CountDownDate");
     localStorage.removeItem("StartDate");
@@ -117,7 +116,7 @@ function cancelTimer(){
     document.getElementById("form").hidden = false;
     document.getElementById("timer-text").hidden = true;
     document.getElementById("date-from").innerHTML = "";
-    document.getElementById("buton-cancel").hidden = true;
+    document.getElementById("cancel-div").hidden = true;
 
     line.destroy();
 
@@ -159,11 +158,13 @@ if (cancelButton) {
 if (localStorage.getItem("CountDownDate") !== null && localStorage.getItem("StartDate") !== null) {
     updateLabel(localStorage.getItem("StartDate"))
     let value = progress()
-    document.getElementById("buton-cancel").hidden = false;
+    document.getElementById("cancel-div").hidden = false;
     if (value < 1) {
         line.animate(progress());
         myReq = requestAnimationFrame(update);
     } else{
         cancelTimer()
     }
+}else{
+    document.getElementById("cancel-div").hidden = true;
 }
