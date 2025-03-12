@@ -27,8 +27,7 @@ body{
 
 .title{
 	color: #FFFFFF;
-	margin-bottom: 15px;
-	font-size: 4.2em;
+	margin-bottom: 2px;
 	font: normal 16px 'Roboto', sans-serif;
 }
 div.wrapper{
@@ -104,7 +103,7 @@ div.cd-box{
 	background: #FFFFFF;
 	float: left;
 	padding: 25px 0 0 0;
-	margin: 10px 15px 0 0;
+	margin: 5px 15px 0 0;
 	-webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 	-moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
@@ -160,7 +159,7 @@ footer p{
 
 #progress-percentage{
 	text-align: center;
-	font: normal 32px 'Roboto', sans-serif;
+	font: normal 34px 'Roboto', sans-serif;
 	width: 100%;
 	margin-top: 30px;
 }
@@ -178,8 +177,8 @@ footer p{
 }
 
 #form{
-	margin-top: 50px;
-	margin-bottom: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #date-from{
@@ -199,7 +198,7 @@ footer p{
 
 .cancel-div{
 	text-align: center; 
-	margin-top: 50px;
+	margin-top: 15px;
 }
   
 @media (max-width: 767px) {

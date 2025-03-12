@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("date-from").innerHTML = "Since " + new Date(startDate).toLocaleDateString() + " " + new Date(startDate).toLocaleTimeString();
         document.getElementById("form").hidden = true
         document.getElementById("timer-text").hidden = false
-        document.getElementById("timer-text").innerHTML = "The timer expires on " + localStorage.getItem("CountDownDate").toString() + "<br><br> Timer Name: " +  localStorage.getItem("Subject")
+        document.getElementById("timer-text").innerHTML = "The timer expires on " + localStorage.getItem("CountDownDate").toString() + "<br><br> Title: " +  localStorage.getItem("Subject")
     }
     
     function progress(){
@@ -139,6 +139,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             color: '#FCB03C'
         });
     }
+
+    const today=(new Date()).toISOString().slice(0,10); // get local current date
+    document.querySelectorAll('input[type="datetime-local"]').forEach(el=>{
+     el.min=today+"T00:00";
+    })
+
     let myReq;
     var line;
 
